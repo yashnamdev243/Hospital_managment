@@ -1,0 +1,124 @@
+.Title {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #1e5a84;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.signin-form {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 15px;
+  background-image: linear-gradient(180deg, #6c91c9, #e3f2fd);
+
+  /* background: #ffffff; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  margin-left: 200px;
+}
+
+
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.image-container img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.signin-page-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  gap: -10px;
+  margin-right: 450px;
+}
+
+.signin-container {
+  flex: 1.5;
+}
+
+.text {
+  display: flex; /* Align label and input horizontally */
+  align-items: center; /* Vertically align label and input */
+  font-size: 20px;
+  margin-left: 4%;
+  gap: 10px; /* Space between label and input */
+}
+
+.text label {
+  width: 100%; /* Fixed width for consistent label alignment */
+  text-align: left; /* Align label text to the right */
+}
+
+.signin-form input {
+  width: 100%;
+  height: 21px;
+  margin-left: 0%;
+  margin-right: 5%;
+  padding: 11px 15px;
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  font-size: 16px;
+
+}
+
+
+.signin-button {
+  width: 120px;
+  height: 40px;
+  margin: 15px auto;
+  margin-top: 25px;
+  margin-bottom: -10px;
+  padding: 10px 24px;
+  background: #1e5a84;
+  color: #fff;
+  border: none;
+  border-radius: 15px 15px 15px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.signin-button:hover {
+  color: #000;
+  background: #125382;
+}
+
+.up-down {
+  animation: up-down linear 4s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translate(1px, 12px); /* Starting position */
+  }
+  24% {
+    transform: translate(1px, 50px); /* Moving down */
+  }
+  50% {
+    transform: translate(1px, 100px); /* Further down */
+  }
+  74% {
+    transform: translate(1px, 120px); /* Moving back up */
+  }
+  100% {
+    transform: translate(1px, 12px); /* Returning to starting position */
+  }
+}
